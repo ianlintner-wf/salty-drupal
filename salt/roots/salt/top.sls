@@ -1,6 +1,6 @@
 base:
   '*':
-    - apache2
-    - libapache2-mod-php5
-    - mysql
-    - vim-nox
+    - states.core
+    - states.webserver
+    - states.dbserver
+

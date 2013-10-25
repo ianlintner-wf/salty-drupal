@@ -1,4 +1,3 @@
-vim-nox:
+g++:
   pkg:
     - installed
-

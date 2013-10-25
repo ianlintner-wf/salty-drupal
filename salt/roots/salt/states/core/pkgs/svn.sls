@@ -1,3 +1,3 @@
-libapache2-mod-php5:
+subversion:
   pkg:
     - installed
