@@ -1,8 +1,9 @@
 ## Purpose
 
-This repo contains the bare minimum to get started using disposable development
-environments through [Vagrant](http://www.vagrantup.com/) and the provisioning
-services provided by [SaltStack](http://saltstack.com/) to build a LAMP stack.
+This repo contains almost all possible tools that you might need to provision
+a simple or complex Drupal project using disposable development environments
+through [Vagrant](http://www.vagrantup.com/) and the provisioning services
+provided by [SaltStack](http://saltstack.com/) to build a LAMP stack.
 
 ## Requirements
 
@@ -34,7 +35,7 @@ Lastly, I have found that the `salt.run_highstate = true` configuration in the
 Vagrantfile occasionally hangs. If this happens, `ctrl-c` during this part of
 the Vagrant build process and run:
 
-`$ vagrant ssh`  
+`$ vagrant ssh`
 `$ salt-call state.highstate`
 
 to be sure that your guest machine has indeed run the Salt provisioning
