@@ -217,3 +217,12 @@ file_client: local
 #
 # A dict for the test module:
 #test.baz: {spam: sausage, cheese: bread}
+
+
+mysql.host: 'localhost'
+mysql.port: 3306
+mysql.user: 'root'
+mysql.pass: 'vagrant'
+mysql.db: 'mysql'
+mysql.unix_socket: '/tmp/mysql.sock'
+mysql.charset: 'utf8'
