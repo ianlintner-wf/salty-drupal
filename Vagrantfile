@@ -6,11 +6,16 @@ Vagrant.configure("2") do |config|
   
   config.vm.network :private_network, ip: "192.168.33.42"
   ## For masterless, mount your file roots file root
+  config.vm.synced_folder "../", "/var/sites"
   config.vm.synced_folder "salt/roots/", "/srv/"
   config.vm.synced_folder "../", "/var/sites", :nfs => { :mount_options => ["dmode=777","fmode=777"] } 
   
 
+
+
+  config.vm.network :private_network, ip: "192.168.33.42"
   config.vm.network :forwarded_port, guest: 80, host: 8080
+  #config.vm.provision :shell, :path => "bootstrap.sh"
 
   # Provider-specific configuration so you can fine-tune VirtualBox for Vagrant.
   # These expose provider-specific options.
